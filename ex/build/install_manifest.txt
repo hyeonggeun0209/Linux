@@ -1,0 +1,2 @@
+/home/jhg/dev/ex/src/../bin/my_prog
+/home/jhg/dev/ex/lib/../lib/libutil.a

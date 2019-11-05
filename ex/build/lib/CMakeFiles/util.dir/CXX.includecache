@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/util.h
+stdio.h
+-
+
+/home/jhg/dev/ex/lib/util.cpp
+util.h
+/home/jhg/dev/ex/lib/util.h
+
