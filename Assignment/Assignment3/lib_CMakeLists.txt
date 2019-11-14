@@ -1,0 +1,5 @@
+add_library(printlog STATIC my_printlog.cpp)
+add_library(square STATIC my_square.cpp)
+
+install (TARGETS printlog square
+ARCHIVE DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../lib)

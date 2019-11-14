@@ -1,0 +1,5 @@
+add_executable(hw3 main.cpp)
+
+target_link_libraries(hw3 printlog square)
+install(TARGETS hw3
+RUNTIME DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../bin)
