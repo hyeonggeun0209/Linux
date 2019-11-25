@@ -3,12 +3,12 @@
 using namespace std;
 
 class Viewer {
-	string PhoneNumber; // ½ÃÃ»ÀÚÀÇ ÈŞ´ëÆù ¹øÈ£ ÀúÀå
-	int VotePresence; // ½ÃÃ»ÀÚÀÇ ÅõÇ¥ ¿©ºÎ ÀúÀå
-	string VoteWho[2]; // ½ÃÁ¤ÀÚ°¡ ÅõÇ¥ÇÑ ÈÄº¸ ÀúÀå
-	int donation; // ½ÃÃ»ÀÚ°¡ ÈÄ¿øÇÑ ±İ¾× ÀúÀå
+	string PhoneNumber; // ì‹œì²­ìì˜ íœ´ëŒ€í° ë²ˆí˜¸ ì €ì¥
+	int VotePresence; // ì‹œì²­ìì˜ íˆ¬í‘œ ì—¬ë¶€ ì €ì¥
+	string VoteWho[2]; // ì‹œì •ìê°€ íˆ¬í‘œí•œ í›„ë³´ ì €ì¥
+	int donation; // ì‹œì²­ìê°€ í›„ì›í•œ ê¸ˆì•¡ ì €ì¥
 public:
-	Viewer(string PhoneNumber); // »ı¼ºµÇ¸é¼­ ÀÎ½ºÅÏ½º º¯¼ö ÃÊ±âÈ­
-	void vote(string name1, string name2 = ""); // ÃÖ´ë µÎ¸í±îÁö °¡´ÉÇÑ ÅõÇ¥ ÇÔ¼ö
-	void donate(int money); // Ãâ¿¬ÀÚ¿¡°Ô ÈÄ¿ø ÇÔ¼ö
+	void set(string PhoneNumber); // ìƒì„±ë˜ë©´ì„œ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ ì´ˆê¸°í™”
+	void vote(string name1, string name2 = ""); // ìµœëŒ€ ë‘ëª…ê¹Œì§€ ê°€ëŠ¥í•œ íˆ¬í‘œ í•¨ìˆ˜
+	void donate(int money); // ì¶œì—°ìì—ê²Œ í›„ì› í•¨ìˆ˜
 };
