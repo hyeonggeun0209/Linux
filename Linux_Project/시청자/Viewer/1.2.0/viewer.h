@@ -4,18 +4,18 @@
 using namespace std;
 
 class viewer {
-	string PhoneNumber; // ½ÃÃ»ÀÚÀÇ ÈŞ´ëÆù ¹øÈ£ ÀúÀå
-	int VotePresence; // ½ÃÃ»ÀÚÀÇ ÅõÇ¥ ¿©ºÎ ÀúÀå
-	string VoteWho[2]; // ½ÃÁ¤ÀÚ°¡ ÅõÇ¥ÇÑ ÈÄº¸ ÀúÀå
-	int donation; // ½ÃÃ»ÀÚ°¡ ÈÄ¿øÇÑ ±İ¾× ÀúÀå
+	string PhoneNumber; // ì‹œì²­ìì˜ íœ´ëŒ€í° ë²ˆí˜¸ ì €ì¥
+	int VotePresence; // ì‹œì²­ìì˜ íˆ¬í‘œ ì—¬ë¶€ ì €ì¥
+	string VoteWho[2]; // ì‹œì •ìê°€ íˆ¬í‘œí•œ í›„ë³´ ì €ì¥
+	int donation; // ì‹œì²­ìê°€ í›„ì›í•œ ê¸ˆì•¡ ì €ì¥
 public:
 	void set(string PhoneNumber, int VotePresence, int donation);
 	string getNumber();
 	string getName();
 	int getVotePresence();
 	int getDonation();
-	void setNumber(string PhoneNumber); // »õ·Î¿î ½ÃÃ»ÀÚ¿¡ ´ëÇÑ setÇÔ¼ö
-	void setPresence(int num);
-	void vote(int num, string name); // ÃÖ´ë µÎ¸í±îÁö °¡´ÉÇÑ ÅõÇ¥ ÇÔ¼ö
-	void donate(int money); // Ãâ¿¬ÀÚ¿¡°Ô ÈÄ¿ø ÇÔ¼ö
+	void setNumber(string PhoneNumber); // ìƒˆë¡œìš´ ì‹œì²­ìì— ëŒ€í•œ setí•¨ìˆ˜
+	void setPresence(int num); // setí•¨ìˆ˜ ì œê±°
+	void vote(int num, string name); // ìµœëŒ€ ë‘ëª…ê¹Œì§€ ê°€ëŠ¥í•œ íˆ¬í‘œ í•¨ìˆ˜
+	void donate(int money); // ì¶œì—°ìì—ê²Œ í›„ì› í•¨ìˆ˜
 };
