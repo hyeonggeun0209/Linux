@@ -17,7 +17,7 @@ int main() {
     while(1) {
         printf("Input something (q:exit)\n");
         fgets(buf.data, BUF_SIZE, stdin);
-        if (buf.data[0] == 'q' && buf.data[1] == 10) break; // buf.data[1] == 10 means buf.data[1] == enter key input;
+        if (buf.data[0] == 'q' && buf.data[1] == 10) break; // buf.data[1] == 10 means buf.data[1] == enter key input \n = ASCII 10, \r = ASCII 13
         write(server_fd, &buf, sizeof(buf));
         client_fd = open(client_fifo, O_RDONLY);
         if (client_fd != -1) {
