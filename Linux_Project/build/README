@@ -1,5 +1,36 @@
+How to Run
+
 cmake .
 make install
 cd bin/
 ./server
 ./client
+
+Client process send signal sigqueue(server's pid, SIGUSR1, s)
+
+
+Add-on function
+
+1. donation
+
+2. community
+
+  client_fd = open(client_fifo, O_WRONLY);
+            key0 = vs.size();
+            write(client_fd, &key0, sizeof(int));
+
+            for (int i = key2; i < key0; i++) {
+                strcpy(buf.data, vs[i].c_str());
+                write(client_fd, &buf, sizeof(buf));
+            }
+            close(client_fd);
+
+            read(server_fd, &key2, sizeof(int));
+            key3 = key2 - key0;
+            for(int i = key0; i < key2; i++) {
+                read(server_fd, &buf, sizeof(buf));
+                str = buf.data;
+                vs.push_back(str);
+            }
+            
+3. pick my star
